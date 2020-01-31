@@ -1,0 +1,35 @@
+/* Homepage */
+
+.homepage{
+position: relative;
+background: #FFFFFF;
+text-align: center;
+}
+
+/* figure this out */
+.title{
+  padding: 10%;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+}
+
+.homepage-card{
+  margin: 10%;
+}
+
+.kitchen-color{
+  background-color: #1B8C42;
+}
+
+.bathroom-color{
+  background-color: #1D78E3;
+}
+
+.garden-color{
+  background-color: #8C1DE3;
+}
