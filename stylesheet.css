@@ -9,6 +9,7 @@ text-align: center;
 /* figure this out */
 .title{
   padding: 10%;
+  font-family: "Open-Sans";
 }
 
 .center {
@@ -22,14 +23,34 @@ text-align: center;
   margin: 10%;
 }
 
+.card-link{
+  color: #FFFFFF;
+}
+
 .kitchen-color{
   background-color: #1B8C42;
+}
+
+.kitchen-card-link:hover{
+  color: #9FCEAF;
 }
 
 .bathroom-color{
   background-color: #1D78E3;
 }
 
+.bathroom-card-link:hover{
+  color: #60A0EB;
+}
+
 .garden-color{
   background-color: #8C1DE3;
+}
+
+.garden-card-link:hover{
+  color: #C58EF1;
+}
+
+.question-button{
+  margin: 8%;
 }
