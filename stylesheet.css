@@ -23,6 +23,13 @@ text-align: center;
   margin: 10%;
 }
 
+.card-columns{
+
+  @include media-breakpoint-only(xl){
+    column-count: 5;
+  }
+
+}
 .card-link{
   color: #FFFFFF;
 }
@@ -53,4 +60,30 @@ text-align: center;
 
 .question-button{
   margin: 8%;
+}
+
+.star {
+    width:70%;
+    height:70%;
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 50%; /* Full width (cover the whole page) */
+  height: 50%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #60A0EB;
+  border: #000000 2px;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+a {
+  text-decoration: none;
 }

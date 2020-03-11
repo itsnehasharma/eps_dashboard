@@ -26,7 +26,7 @@
       </div>
       <div class="col center">
         <h3>Quiz</h3>
-        <button type="button" name="button" class="btn btn-outline-primary btn-block">a. answer choice</button>
+        <button type="button" name="button" class="btn btn-outline-primary btn-block" onclick="on()">a. answer choice</button>
         <button type="button" name="button" class="btn btn-outline-primary btn-block">b. answer choice</button>
         <button type="button" name="button" class="btn btn-outline-primary btn-block">c. answer choice</button>
         <button type="button" name="button" class="btn btn-outline-primary btn-block">d. answer choice</button>
@@ -37,6 +37,13 @@
 
     </div>
 
+    <div id="overlay" class="center" onclick="off()">
+      <br><br>
+      <h1>GOOD JOB!</h1>
+      <img src="assets\star.png" alt="" class="star">
+    </div>
+
+
 
   </div>
 
@@ -44,6 +51,14 @@
   <script>
       function goBack() {
         window.history.back();
+      }
+
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
       }
   </script>
 
