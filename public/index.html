@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>EVERYDAY PROBLEM SOLVING!!</title>
+</head>
+
+<body>
+  <h1 class="center">EVERYDAY PROBLEM SOLVING</h1>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- <div class="row">
+
+      <div class="col">
+        <div class="card text-white mb-3 homepage-card kitchen-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title center">KITCHEN</h5> 
+            <a href="food_questions.html" class="stretched-link card-link kitchen-card-link">
+              <h5 class="card-title center">FOOD</h5>
+            </a>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+
+        <div class="card text-white mb-3 homepage-card bathroom-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title center">BATHROOM</h5> 
+            <a href="questions.html" class="stretched-link card-link bathroom-card-link">
+              <h5 class="card-title center">ELECTRONICS</h5>
+            </a>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+
+        <div class="card text-white mb-3 homepage-card garden-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title center">GARDEN</h5> 
+            <a href="questions.html" class="stretched-link card-link garden-card-link">
+              <h5 class="card-title center">BIOLOGY</h5>
+            </a>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+        </div>
+
+      </div>
+
+    </div> -->
+
+    <!-- <div class="row">
+
+      <div class="col">
+        <div class="card text-white mb-3 homepage-card kitchen-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title center">KITCHEN</h5> 
+            <a href="questions.html" class="stretched-link card-link kitchen-card-link">
+              <h5 class="card-title center">SOCIOLOGY</h5>
+            </a>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+
+        <div class="card text-white mb-3 homepage-card bathroom-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title center">BATHROOM</h5> 
+            <a href="questions.html" class="stretched-link card-link bathroom-card-link">
+              <h5 class="card-title center">PLUMBING</h5>
+            </a>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+
+        <div class="card text-white mb-3 homepage-card garden-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <a href="questions.html" class="stretched-link card-link garden-card-link">
+              <h5 class="card-title center">PLANTS</h5>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div> -->
+
+    <!-- <div class="row">
+
+      <div class="col">
+        <div class="card text-white mb-3 homepage-card kitchen-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title center">KITCHEN</h5> 
+            <a href="questions.html" class="stretched-link card-link kitchen-card-link">
+              <h5 class="card-title center">HARDWARE/MATERIALS</h5>
+            </a>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+
+        <div class="card text-white mb-3 homepage-card bathroom-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title center">BATHROOM</h5> 
+            <a href="questions.html" class="stretched-link card-link bathroom-card-link">
+              <h5 class="card-title center">MECHANICS</h5>
+            </a>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+
+        <div class="card text-white mb-3 homepage-card garden-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title center">GARDEN</h5> 
+            <a href="questions.html" class="stretched-link card-link garden-card-link">
+              <h5 class="card-title center">ANIMALS</h5>
+            </a>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+        </div>
+
+      </div>
+
+    </div> -->
+
+    <!-- <div class="row">
+
+      <div class="col">
+        <div class="card text-white mb-3 homepage-card kitchen-color" style="max-width: 18rem;">
+          <div class="card-body">
+            <!-- <h5 class="card-title center">KITCHEN</h5> 
+            <a href="questions.html" class="stretched-link card-link kitchen-card-link">
+              <h5 class="card-title center">CLEANING</h5>
+            </a>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+
+      </div>
+      <div class="col">
+
+      </div>
+
+    </div> -->
+
+    <ul id="problems"></ul>
+
+  </div>
+
+  </div>
+
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDOByUsidSkJpE-P4lN4V80rwIw4Ztq5ms",
+      authDomain: "everyday-problem-solving.firebaseapp.com",
+      databaseURL: "https://everyday-problem-solving.firebaseio.com",
+      projectId: "everyday-problem-solving",
+      storageBucket: "everyday-problem-solving.appspot.com",
+      messagingSenderId: "1086821160226",
+      appId: "1:1086821160226:web:e9754760e762c19a4d017b",
+      measurementId: "G-31LQXD8EKT"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    //db.settings({ timestampsInSnapshots: true });
+    //firebase.analytics();
+  </script>
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>

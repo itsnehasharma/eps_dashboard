@@ -23,13 +23,14 @@ text-align: center;
   margin: 10%;
 }
 
-.card-columns{
+/* .card-columns{
 
   @include media-breakpoint-only(xl){
     column-count: 5;
   }
 
-}
+} */
+
 .card-link{
   color: #FFFFFF;
 }
@@ -86,4 +87,8 @@ text-align: center;
 
 a {
   text-decoration: none;
+}
+
+li span{
+  display: block;
 }
