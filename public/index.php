@@ -1,4 +1,31 @@
-<!doctype html>
+<?php 
+      //This file cannot be viewed like you would open a normal html file
+      //instead it needs to be hosted in XAMPP after you've installed that 
+
+  $username = "<Oracle Username here>";                   // Username
+  $password = "<Oracle Password Here>";                   // Password
+  $database = "oracle.cise.ufl.edu/orcl";                 // Connection String
+ 
+  $query = "INSERT INTO test_data values('First','Last')";
+
+  $c = oci_connect($username, $password, $database);
+  if (!$c) {
+    $m = oci_error();
+    trigger_error('Could not connect to database: '. $m['message'], E_USER_ERROR);
+  }
+  $s = oci_parse($c, $query);
+  if (!$s) {
+      $m = oci_error($c);
+      trigger_error('Could not parse statement: '. $m['message'], E_USER_ERROR);
+  }
+  $r = oci_execute($s);
+  if (!$r) {
+      $m = oci_error($s);
+      trigger_error('Could not execute statement: '. $m['message'], E_USER_ERROR);
+  }
+
+?>
+
 <html lang="en">
 
 <head>
